@@ -4,7 +4,7 @@ const cors = require('cors');
 const knex = require('knex');
 const clarifai = require('clarifai');
 const clarifaiApp = new clarifai.App({
-  apiKey: 'a3da4f0399a845dda8742be3de10c44e'
+  apiKey: process.env.CLARIFAI_KEY
 });
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
